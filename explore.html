@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .explore-menu {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #d8572a;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.menu-card {
+  background: #fff8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-card h4 {
+  font-size: 1.3rem;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.menu-card p {
+  padding: 0 15px 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <section class="explore-menu">
+  <div class="container">
+    <h2 class="section-title">Explore Our Menu</h2>
+    <div class="menu-grid">
+      
+      <!-- Chicken Biryani -->
+      <div class="menu-card">
+        <img src="briyani.jpg" alt="Chicken Biryani">
+        <h4>Chicken Biryani</h4>
+        <p>Spicy, aromatic layers of rice and tender chicken.</p>
+      </div>
+
+      <!-- Grilled Chicken -->
+      <div class="menu-card">
+        <img src="grill.jpg" alt="Grilled Chicken">
+        <h4>Grilled Chicken</h4>
+        <p>Perfectly charred with smoky spices and herbs.</p>
+      </div>
+
+      <!-- Paneer Tikka -->
+      <div class="menu-card">
+        <img src="paneer.jpg" alt="Paneer Tikka">
+        <h4>Paneer Tikka</h4>
+        <p>Marinated cottage cheese grilled to perfection.</p>
+      </div>
+
+      <!-- Veg Arrabiata -->
+      <div class="menu-card">
+        <img src="pasta.jpg" alt="Veg Arrabiata">
+        <h4>Veg Arrabiata</h4>
+        <p>Pasta tossed in spicy tomato sauce and herbs.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+  padding: 60px 20px;
+  background-color: #fff0e6;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  color: #d8572a;
+  margin-bottom: 40px;
+}
+
+.menu-category h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 40px 0 20px;
+}
+
+.menu-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-card {
+  background: white;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.menu-card .details {
+  padding: 15px;
+}
+
+.menu-card h4 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+}
+
+.label {
+  font-size: 0.8rem;
+  background: #d8572a;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <section class="menu" id="menu">
+  <div class="container">
+    <h2>Our Menu</h2>
+
+    <div class="menu-category">
+      <h3>Starters</h3>
+      <div class="menu-items">
+        <div class="menu-card">
+          <img src="65.jpg" alt="Chicken 65">
+          <div class="details">
+            <h4>Chicken 65</h4>
+            <span class="label">Non-Veg</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="paneer.jpg" alt="Paneer Tikka">
+          <div class="details">
+            <h4>Paneer Tikka</h4>
+            <span class="label">Veg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Biryani</h3>
+      <div class="menu-items">
+        <div class="menu-card">
+          <img src="briyani.jpg" alt="Chicken Biryani">
+          <div class="details">
+            <h4>Chicken Biryani</h4>
+            <span class="label">Non-Veg</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="veg briyani.jpg" alt="Veg Biryani">
+          <div class="details">
+            <h4>Veg Biryani</h4>
+            <span class="label">Veg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Grill & Pasta</h3>
+      <div class="menu-items">
+        <div class="menu-card">
+          <img src="grill.jpg" alt="Grilled Chicken">
+          <div class="details">
+            <h4>Grilled Chicken</h4>
+            <span class="label">Non-Veg</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="pasta.jpg" alt="Veg Pasta">
+          <div class="details">
+            <h4>Veg Arrabiata</h4>
+            <span class="label">Veg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
