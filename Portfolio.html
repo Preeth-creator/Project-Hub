@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Designer Portfolio</title>
+  <style>
+    :root {
+      --bg: #e3dede;
+      --text: #333;
+      --section-bg: #f5f5f5;
+    }
+
+    body.dark {
+      --bg: #1e1e1e;
+      --text: #f0f0f0;
+      --accent:#00bcd4;
+      --section-bg: #2c2c2c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .toggle-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.4rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: var(--section-bg);
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      flex: 1 1 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+    }
+
+    .hero-img {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--accent);
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .design-style {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      padding: 1rem;
+      border-left: 5px solid var(--accent);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .catchy-line {
+      font-style: italic;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 2rem;
+      color: var(--accent);
+    }
+
+
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #222;
+      color: #fff;
+    }
+
+    #scrollTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      font-size: 18px;
+      z-index: 999;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-img img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Portfolio</h2>
+    <div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Preetha <br> (Web Designer)</h1>
+      <p>I create clean, simple, and responsive websites using HTML, CSS, and JavaScript.</p>
+      <div class="catchy-line"><b>“Let’s turn imagination into innovation — together.”</b></div>
+    </div>
+    <div class="hero-img">
+      <img src="img2.jpg" alt="My Photo" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>ABOUT ME</h2><br><br>
+    <p>"I'm a creative web designer driven by a passion for building visually appealing and user-friendly websites. I specialize in crafting responsive designs that deliver seamless experiences across all devices. With a mindset of continuous learning and a heart for design, I strive to turn ideas into impactful digital experiences".</p>
+<br>
+    <h3 style="margin-top: 2rem;">Education</h3>
+    <ul>
+      <li><strong>Bachelor's of Computer Science</strong></li><br>
+      <li>Graduated from St.Anne's Arts and Science College, CHENNAI</li><br>
+      <li>2025</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>MY SKILLS</h2><br>
+    <ul>
+      <li>HTML</li><br>
+     <li>CSS</li><br>
+      <li>Responsive Web Design</li><br>
+    </ul>
+  </section>
+
+  <section id="certify">
+    <h2>CERTIFICATIONS</h2><br>
+    <ul>
+      <li>Oracle Cloud Infrastructure 2023 certified Foundations Associate-2023</li><br>
+     <li>IBM SkillsBuild : Journey to Cloud Envisioning Your Solution-2024</li><br>
+      <li>Mongo DB Database for SmartBridge-2025</li><br>
+    </ul>
+  </section>
+
+  <section id="tools">
+    <h2>TOOLS I USE</h2><br>
+    <ul>
+      <li>Visual Studio Code</li><br>
+      <li>Git & GitHub</li><br>
+    </ul>
+  </section>
+
+  <section>
+    <h2>MY DESIGN STYLE</h2>
+    <div class="design-style">
+      Focused on What Matters :  The User Experience & Simple, Modern, Intentional.
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>CONTACT ME</h2><br><br><br>
+    <p>Email: <a href="mailto:yourname@example.com">preetharaeylnn@gmailcom</a></p><br>
+    <p>Phone: +91-8438205561</p><br>
+    <p>Portfolio: <a href="https://github.com/Preeth-creator/Project-Hub.git" target="_blank">View Live</a></p><br>
+    
+  </section>
+
+  <footer>
+
+  </footer>
+
+  <button id="scrollTop" onclick="scrollToTop()">↑</button>
+
+  <script>
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+
+    // Scroll to top
+    const scrollTopBtn = document.getElementById("scrollTop");
+    window.onscroll = () => {
+      scrollTopBtn.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+   
+  </script>
+
+</body>
+</html>
