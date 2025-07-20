@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact-section {
+  background-color: #fff8f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #d8572a;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  margin-bottom: 40px;
+  color: black;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form button {
+  background-color: #d8572a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.contact-info h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color:black;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color:black;
+}
+
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to place an order? We’d love to hear from you!</p>
+    
+    <div class="contact-content">
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h4>Reach Us</h4>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> contact@themasalatrail.com</p>
+        <p><strong>Address:</strong> No. 45, Food Street, Anna Nagar, Chennai - 600040</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasty Bites</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .container p{
+      color: black;
+    }
+    header {
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #d8572a;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+    }
+
+    .btn {
+      background: #d8572a;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      color: #d8572a;
+      margin-bottom: 30px;
+    }
+
+    .dishes {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .dish {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+
+    .dish:hover {
+      transform: scale(1.10);
+    }
+
+    .dish img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .dish h4 {
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #636161;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      .dishes {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+      .contact {
+        padding: 60px 20px;
+        background-color: #fff0e6;
+        text-align: center;
+      }
+
+       .contact h3 {
+        font-size: 2rem;
+        color: #d8572a;
+        margin-bottom: 20px;
+      }
+
+      .contact-details p {
+       font-size: 1rem;
+       margin: 10px 0;
+      }  
+
+      .contact a {
+        color: #d8572a;
+        text-decoration: none;
+        }
+
+      .map iframe {
+        margin-top: 20px;
+        border-radius: 8px;
+       }
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1>THE MASALA TRIAL</h1>
+      <nav>
+        <a href="home res.html">Home</a>
+        <a href="menu res.html">Menu</a>
+        <a href="about res.html">About</a>
+        <a href="contact res.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to Tasty Bites</h2>
+      <p>Delicious meals made with love.</p>
+      <a href="explore.html" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Featured Dishes</h3>
+    <div class="dishes">
+      <div class="dish">
+        <img src="grill.jpg" alt="Dish 1" />
+        <h4>Spicy Grilled Chicken</h4>
+      </div>
+      <div class="dish">
+        <img src="italian pasta.jpg" alt="Dish 2" />
+        <h4>Classic Italian Pasta</h4>
+      </div>
+      <div class="dish">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Dish 3" />
+        <h4>Cheesy Burger Delight</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <section class="contact" id="contact">
+  <div class="container">
+    <h3>GET IN TOUCH</h3>
+    <p>We’d love to hear from you! Call, message, or visit us.</p>
+
+    <div class="contact-details">
+      <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@tastybites.com">info@tastybites.com</a></p>
+      <p><strong>Address:</strong> No. 45, Food Street, Anna Nagar, Chennai - 600040</p>
+      <p><strong>Opening Hours:</strong> Mon–Sun | 11:00 AM – 11:00 PM</p>
+    </div>
+
+    <!-- Optional Google Map Embed -->
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0000000000005!2d80.218674!3d13.084622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267d0f1234567%3A0x123456789abcd!2sAnna%20Nagar%2C%20Chennai!5e0!3m2!1sen!2sin!4v1623445678901!5m2!1sen!2sin" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+  </footer>
+</body>
+</html>
